@@ -1,21 +1,30 @@
 # 🌾 AGRINHO 2026 - Agricultura Inteligente
 
 ## 📌 Sobre o projeto
-Site desenvolvido para o projeto AGRINHO 2026 com foco em tecnologia no campo, mostrando como inovação pode melhorar a produção agrícola.
+Este site foi desenvolvido para o projeto AGRINHO 2026, com o tema de tecnologia no campo. Ele mostra como a inovação pode ajudar a agricultura a ser mais eficiente, sustentável e produtiva.
+
+A tecnologia ajuda a reduzir desperdícios de água, fertilizantes e tempo, além de melhorar a previsibilidade da safra.
 
 ---
 
-## 💡 Objetivo
-Demonstrar como tecnologia, matemática e programação ajudam a reduzir desperdícios e aumentar a produtividade no campo.
+## 🧠 O que o projeto aborda
+
+- 📊 Matemática aplicada no campo
+- 💻 Programação e lógica
+- 📡 Internet das Coisas (IoT)
+- 📈 Análise de dados agrícolas
+- 🤖 Automação no campo
 
 ---
 
-## ⚙️ Funcionalidades
+## 🎮 Funcionalidades do site
+
 - Site interativo com JavaScript
-- Modo escuro
-- Botões dinâmicos
-- Efeitos visuais nos cards
-- Header interativo
+- Botão com mensagem dinâmica
+- Quiz com pontuação
+- Resultado automático do quiz
+- Interações ao clicar nos cards
+- Mensagem de boas-vindas
 
 ---
 
@@ -27,16 +36,16 @@ Luiz Alessandro
 
 ---
 
-## 🧠 Tecnologias usadas
+## 🚀 Objetivo
+Demonstrar como a tecnologia pode transformar a agricultura tradicional em agricultura de precisão, reduzindo desperdícios e aumentando a produtividade.
+
+---
+
+## 🧱 Tecnologias usadas
 - HTML
 - CSS
 - JavaScript
 
 ---
 
-## 🚀 Estrutura
-agrinho2026/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
+## 📁 Estrutura do projeto
