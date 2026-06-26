@@ -1,49 +1,53 @@
+let pontos = 0;
+let respondidas = 0;
+
+/* BOTÃO PRINCIPAL */
 function mostrarMensagem() {
   document.getElementById("mensagem").innerHTML =
     "🌱 A tecnologia no campo ajuda a economizar recursos e melhorar a produção!";
 }
 
-/* INTERAÇÃO 1 - destacar cards ao clicar */
+/* QUIZ */
+function responder(pergunta, correto) {
+  if (correto) {
+    pontos++;
+  }
+
+  respondidas++;
+
+  if (respondidas === 3) {
+    mostrarResultado();
+  }
+}
+
+/* RESULTADO FINAL */
+function mostrarResultado() {
+  let resultado = document.getElementById("resultado");
+
+  if (pontos === 3) {
+    resultado.innerHTML = "🏆 Perfeito! Você acertou tudo!";
+  } 
+  else if (pontos === 2) {
+    resultado.innerHTML = "👍 Muito bom! Quase perfeito!";
+  } 
+  else if (pontos === 1) {
+    resultado.innerHTML = "🌱 Bom esforço! Continue aprendendo!";
+  } 
+  else {
+    resultado.innerHTML = "📚 Tente novamente e aprenda mais sobre tecnologia no campo!";
+  }
+}
+
+/* INTERAÇÃO EXTRA - alerta ao entrar no site */
 document.addEventListener("DOMContentLoaded", function () {
+  alert("Bem-vindo ao AGRINHO 2026 🌾");
+
   const cards = document.querySelectorAll(".card");
 
   cards.forEach(card => {
     card.addEventListener("click", function () {
       card.style.background = "#e8f5e9";
-      card.style.border = "2px solid #2e7d32";
+      card.style.transition = "0.3s";
     });
-  });
-});
-
-/* INTERAÇÃO 2 - efeito de digitação no título */
-document.addEventListener("DOMContentLoaded", function () {
-  const titulo = document.querySelector("h1");
-  const texto = titulo.innerText;
-  titulo.innerText = "";
-
-  let i = 0;
-
-  function digitar() {
-    if (i < texto.length) {
-      titulo.innerText += texto.charAt(i);
-      i++;
-      setTimeout(digitar, 100);
-    }
-  }
-
-  digitar();
-});
-
-/* INTERAÇÃO 3 - hover inteligente no header */
-document.addEventListener("DOMContentLoaded", function () {
-  const header = document.querySelector("header");
-
-  header.addEventListener("mouseover", function () {
-    header.style.transform = "scale(1.02)";
-    header.style.transition = "0.3s";
-  });
-
-  header.addEventListener("mouseout", function () {
-    header.style.transform = "scale(1)";
   });
 });
