@@ -20,54 +20,77 @@
     <section class="card">
       <h2>📌 Problema</h2>
       <p>
-        O principal problema que a tecnologia pode resolver no campo é o desperdício de recursos (água, fertilizantes e tempo) e a previsibilidade da safra, que afetam diretamente a renda das famílias rurais.
+        O principal problema no campo é o desperdício de recursos como água, fertilizantes e tempo,
+        além da dificuldade em prever a safra.
       </p>
     </section>
 
     <section class="card">
-      <h2>📊 Aplicação da Matemática e da Programação</h2>
+      <h2>📊 Matemática e Programação</h2>
 
       <h3>➗ Matemática no campo</h3>
       <p>
-        Serve para calcular a quantidade exata de água por metro quadrado via equações de volume. 
-        Gráficos de estatística ajudam a prever perdas e analisar o histórico do clima.
+        Ajuda a calcular irrigação e analisar dados climáticos.
       </p>
 
-      <h3>💻 Programação na prática</h3>
+      <h3>💻 Programação</h3>
       <p>
-        Permite criar sistemas automatizados com lógica (como JavaScript).
-        Exemplo: se o solo estiver seco, ligar irrigação; se houver chuva, interromper irrigação.
+        Permite automatizar processos como irrigação inteligente com sensores.
       </p>
     </section>
 
     <section class="card">
-      <h2>🌐 Inspirações da Alura</h2>
+      <h2>🌐 Tecnologias</h2>
 
-      <h3>📡 Internet das Coisas (IoT)</h3>
-      <p>
-        Uso de sensores como Arduino ou micro:bit para monitorar a umidade do solo.
-      </p>
+      <p><strong>📡 IoT:</strong> sensores no solo para medir umidade</p>
+      <p><strong>📊 Dados:</strong> análise de clima e produção</p>
+      <p><strong>🤖 Automação:</strong> sistemas inteligentes</p>
+    </section>
 
-      <h3>📊 Análise de Dados</h3>
-      <p>
-        Criação de painéis visuais para acompanhar a saúde das plantações pelo celular.
-      </p>
+    <!-- BOTÃO INTERATIVO -->
+    <section class="card">
+      <h2>🌱 Interação</h2>
 
-      <h3>🤖 Automação</h3>
-      <p>
-        Sistemas inteligentes de irrigação que tomam decisões automaticamente com base nos dados.
-      </p>
+      <button onclick="mostrarMensagem()">Clique para ver mensagem</button>
+      <p id="mensagem"></p>
+    </section>
+
+    <!-- QUIZ INTERATIVO -->
+    <section class="card">
+      <h2>🧠 Quiz Interativo - AGRINHO 2026</h2>
+
+      <p>Responda as perguntas:</p>
+
+      <h3>1. O que a tecnologia ajuda a reduzir no campo?</h3>
+      <button onclick="responder(1, true)">Desperdício de recursos</button>
+      <button onclick="responder(1, false)">Aumento de custos</button>
+
+      <h3>2. IoT no campo significa:</h3>
+      <button onclick="responder(2, true)">Sensores conectados</button>
+      <button onclick="responder(2, false)">Máquinas sem energia</button>
+
+      <h3>3. Programação na agricultura serve para:</h3>
+      <button onclick="responder(3, true)">Automatizar processos</button>
+      <button onclick="responder(3, false)">Pintar plantações</button>
+
+      <p id="resultado"></p>
     </section>
 
     <section class="card">
       <h2>🌱 Conclusão</h2>
       <p>
-        A tecnologia no campo ajuda a reduzir desperdícios de água, fertilizantes e tempo. 
-        Com isso, a agricultura se torna mais eficiente, sustentável e lucrativa para os produtores rurais.
+        A tecnologia transforma a agricultura tradicional em agricultura de precisão,
+        reduzindo desperdícios e aumentando a produtividade.
       </p>
     </section>
 
   </main>
+
+  <footer>
+    <p>Projeto AGRINHO 2026</p>
+    <p>Aluna: Kauane Kanak</p>
+    <p>Professor: Luiz Alessandro</p>
+  </footer>
 
   <script src="script.js"></script>
 
